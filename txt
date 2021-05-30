@@ -1,0 +1,331 @@
+@DESKTOP-H9BOO86:/mnt/x/Development/code/Phase_2/sinatra-logging-in-and-out$ learn spec/sinatra_logging_in_and_out_spec.rb --f-f
+D, [2021-05-30T16:49:06.954624 #4546] DEBUG -- :    (0.6ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+Run options: include {:focus=>true}
+
+All examples were filtered out; ignoring {:focus=>true}
+
+ApplicationController
+  GET '/'
+    returns a 200 status code
+    contains a form for a user to log in
+  POST '/login'
+    returns a 302 redirect status code
+    sets session[:user_id] equal to id of the user
+    displays the correct username based on session[:user_id]
+    displays the correct balance based on session[:user_id]
+       +              
+       +              <ol start="1077" class="post-context"
+       +                  id="post-20" onclick="toggle(20);">
+       +                
+       +                <li class="post-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      res = [res] if Integer === res or String === res
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      if Array === res and Integer === res.first
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        res = res.dup
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        status(res.shift)
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        body(res.pop)
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        headers(*res)
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +              <div class="clear"></div>
+       +            </li>
+       +
+       +          
+       +
+       +        
+       +      
+       +          
+       +
+       +            <li class="frame-info framework">
+       +              <code>&#x2F;usr&#x2F;share&#x2F;rvm&#x2F;gems&#x2F;ruby-2.6.1&#x2F;gems&#x2F;sinatra-2.0.2&#x2F;lib&#x2F;sinatra&#x2F;base.rb</code> in
+       +                <code><strong>invoke</strong></code>
+       +            </li>
+       +
+       +            <li class="code framework">
+       +              
+       +              <ol start="1069"
+       +                  class="pre-context" id="pre-21"
+       +                  onclick="toggle(21);">
+       +                
+       +                <li class="pre-context-line"><code>      env[&#x27;sinatra.static_file&#x27;] = path
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      cache_control(*settings.static_cache_control) if settings.static_cache_control?
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      send_file path, options.merge(:disposition =&gt; nil)
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    end
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    # Run the block with &#x27;throw :halt&#x27; support and apply result to the response.
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    def invoke
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +
+       +              <ol start="1076" class="context" id="21"
+       +                  onclick="toggle(21);">
+       +                <li class="context-line" id="context-21"><code>      res = catch(:halt) { yield }</code></li>
+       +              </ol>
+       +
+       +              
+       +              <ol start="1077" class="post-context"
+       +                  id="post-21" onclick="toggle(21);">
+       +                
+       +                <li class="post-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      res = [res] if Integer === res or String === res
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      if Array === res and Integer === res.first
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        res = res.dup
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        status(res.shift)
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        body(res.pop)
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        headers(*res)
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +              <div class="clear"></div>
+       +            </li>
+       +
+       +          
+       +
+       +        
+       +      
+       +          
+       +
+       +            <li class="frame-info framework">
+       +              <code>&#x2F;usr&#x2F;share&#x2F;rvm&#x2F;gems&#x2F;ruby-2.6.1&#x2F;gems&#x2F;sinatra-2.0.2&#x2F;lib&#x2F;sinatra&#x2F;base.rb</code> in
+       +                <code><strong>call!</strong></code>
+       +            </li>
+       +
+       +            <li class="code framework">
+       +              
+       +              <ol start="917"
+       +                  class="pre-context" id="pre-22"
+       +                  onclick="toggle(22);">
+       +                
+       +                <li class="pre-context-line"><code>      @env      = env
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      @params   = IndifferentHash.new
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      @request  = Request.new(env)
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      @response = Response.new
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      template_cache.clear if settings.reload_templates
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      @response[&#x27;Content-Type&#x27;] = nil
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +
+       +              <ol start="924" class="context" id="22"
+       +                  onclick="toggle(22);">
+       +                <li class="context-line" id="context-22"><code>      invoke { dispatch! }</code></li>
+       +              </ol>
+       +
+       +              
+       +              <ol start="925" class="post-context"
+       +                  id="post-22" onclick="toggle(22);">
+       +                
+       +                <li class="post-context-line"><code>      invoke { error_block!(response.status) } unless @env[&#x27;sinatra.error&#x27;]
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      unless @response[&#x27;Content-Type&#x27;]
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        if Array === body and body[0].respond_to? :content_type
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>          content_type body[0].content_type
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        else
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>          content_type :html
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +              <div class="clear"></div>
+       +            </li>
+       +
+       +          
+       +
+       +        
+       +      
+       +          
+       +
+       +            <li class="frame-info framework">
+       +              <code>&#x2F;usr&#x2F;share&#x2F;rvm&#x2F;gems&#x2F;ruby-2.6.1&#x2F;gems&#x2F;sinatra-2.0.2&#x2F;lib&#x2F;sinatra&#x2F;base.rb</code> in
+       +                <code><strong>call</strong></code>
+       +            </li>
+       +
+       +            <li class="code framework">
+       +              
+       +              <ol start="906"
+       +                  class="pre-context" id="pre-23"
+       +                  onclick="toggle(23);">
+       +                
+       +                <li class="pre-context-line"><code>      @app = app
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      @template_cache = Tilt::Cache.new
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      yield self if block_given?
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    end
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    # Rack call interface.
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    def call(env)
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +
+       +              <ol start="913" class="context" id="23"
+       +                  onclick="toggle(23);">
+       +                <li class="context-line" id="context-23"><code>      dup.call!(env)</code></li>
+       +              </ol>
+       +
+       +              
+       +              <ol start="914" class="post-context"
+       +                  id="post-23" onclick="toggle(23);">
+       +                
+       +                <li class="post-context-line"><code>    end
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>    def call!(env) # :nodoc:
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      @env      = env
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      @params   = IndifferentHash.new
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      @request  = Request.new(env)
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>      @response = Response.new
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +              <div class="clear"></div>
+       +            </li>
+       +
+       +          
+       +
+       +        
+       +      
+       +          
+       +
+       +            <li class="frame-info system">
+       +              <code>&#x2F;usr&#x2F;share&#x2F;rvm&#x2F;gems&#x2F;ruby-2.6.1&#x2F;gems&#x2F;rack-protection-2.0.2&#x2F;lib&#x2F;rack&#x2F;protection&#x2F;xss_header.rb</code> in
+       +                <code><strong>call</strong></code>
+       +            </li>
+       +
+       +            <li class="code system">
+       +              
+       +              <ol start="11"
+       +                  class="pre-context" id="pre-24"
+       +                  onclick="toggle(24);">
+       +                
+       +                <li class="pre-context-line"><code>    #
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    # Options:
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    # xss_mode:: How the browser should prevent the attack (default: :block)
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>    class XSSHeader &lt; Base
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      default_options :xss_mode =&gt; :block, :nosniff =&gt; true
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>
+       +</code></li>
+       +                
+       +                <li class="pre-context-line"><code>      def call(env)
+       +</code></li>
+       +                
+       +              </ol>
+       +              
+       +
+       +              <ol start="18" class="context" id="24"
+       +                  onclick="toggle(24);">
+       +                <li class="context-line" id="context-24"><code>        status, headers, body = @app.call(env)</code></li>
+       +              </ol>
+       +
+       +              
+       +              <ol start="19" class="post-context"
+       +                  id="post-24" onclick="toggle(24);">
+       +                
+       +                <li class="post-context-line"><code>        headers[&#x27;X-XSS-Protection&#x27;]       ||= &quot;1; mode=#{options[:xss_mode]}&quot; if html? headers
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        headers[&#x27;X-Content-Type-Options&#x27;] ||= &#x27;nosniff&#x27;                       if options[:nosniff]
+       +</code></li>
+       +                
+       +                <li class="post-context-line"><code>        [status, headers, body]
+       +</code></li>
